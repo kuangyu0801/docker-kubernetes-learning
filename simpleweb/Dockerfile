@@ -3,9 +3,12 @@ FROM node:alpine
 
 WORKDIR /usr/app
 
-# Install some dependencies
-COPY ./ ./
+# Install npm dependencies
+
+# take advantage of container cache by install the less-frequent modified package.json
+COPY ./package.json ./
 RUN npm install
+COPY ./ ./
 
 # Default command
 CMD ["npm", "start"]
