@@ -11,6 +11,8 @@ const client = redis.createClient(
 client.set('visits', 0);
 // root route
 app.get('/', (req, res) => {
+    // force exit w/
+    process.exit(0);
     // query redis server
     client.get('visits', (err, visits) => {
         res.send('Number of visits is: ' + visits);

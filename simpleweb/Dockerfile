@@ -1,6 +1,7 @@
 # Specify a base image
 FROM node:alpine
 
+# Specity the working directory inside continer
 WORKDIR /usr/app
 
 # Install npm dependencies
