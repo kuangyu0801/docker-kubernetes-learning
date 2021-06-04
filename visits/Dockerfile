@@ -15,5 +15,12 @@ COPY ./ ./
 CMD ["npm", "start"]
 
 # build command
-# docker build -t kuangyu0801/simpleweb .
-# docker run -p in-port:8081 kuangyu0801/simpleweb
+# docker build -t kuangyu0801/visits:latest .
+# docker run -p in-port:8081 kuangyu0801/visits
+
+# start all container in detach mode
+# docker-compose up -d
+
+# docker-compose down
+# rebuild and start container
+# docker-compose up --build
