@@ -1,7 +1,16 @@
 # develop file
+
+# build image 
 # $ docker build -f Dockerfile.dev .
+
+# run image
 # $ docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app ${IMAGE_ID}
+
+# build and run using docker compose
 # $ docker-compose up
+
+# replace original command and run in interactive mode
+# $ docker run -it 860a66b9783ca npm run test
 FROM node:alpine
 
 WORKDIR '/app'
