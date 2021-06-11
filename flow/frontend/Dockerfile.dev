@@ -8,6 +8,7 @@
 
 # build and run using docker compose
 # $ docker-compose up
+# $ docker-compose up --build
 
 # replace original command and run in interactive mode
 # $ docker run -it 860a66b9783ca npm run test
