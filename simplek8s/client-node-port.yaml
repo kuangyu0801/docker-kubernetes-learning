@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: client-node-port
+spec:
+  # use NodePort only in dev phase
+  type: NodePort
+  ports:
+    # service port exposed inside node
+    - port: 3050
+      # container port in pod
+      targetPort: 3000
+      # port exposed outside node: random 30000~32767
+      nodePort: 31515
+  selector:
+    # match with label
+    component: web
+# access service $ $(minikube ip):31515
