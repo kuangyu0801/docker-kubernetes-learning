@@ -20,3 +20,4 @@ spec:
         image: stephengrider/multi-client
         ports:
           - containerPort: 3000
+# set docker client to minikube docker engine: $eval $(minikube docker-env)
