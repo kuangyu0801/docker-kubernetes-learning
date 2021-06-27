@@ -4,3 +4,6 @@
 [submodule "complex-container-app"]
 	path = complex-container-app
 	url = https://github.com/kuangyu0801/complex-container-app.git
+[submodule "multi-k8s"]
+	path = multi-k8s
+	url = https://github.com/kuangyu0801/multi-k8s.git
