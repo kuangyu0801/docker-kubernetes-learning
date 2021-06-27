@@ -16,4 +16,4 @@ CMD ["npm", "start"]
 
 # build command
 # docker build -t kuangyu0801/simpleweb .
-# docker run -p in-port:8080 kuangyu0801/simpleweb
+# docker run -p $(INPORT):8080 kuangyu0801/simpleweb
