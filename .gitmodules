@@ -1,3 +1,6 @@
 [submodule "docker-react"]
 	path = docker-react
 	url = https://github.com/kuangyu0801/docker-react.git
+[submodule "complex-container-app"]
+	path = complex-container-app
+	url = https://github.com/kuangyu0801/complex-container-app.git
